@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "review-finding.schema.json",
+  "title": "AI Developer Toolkit Review Finding",
+  "type": "object",
+  "required": ["severity", "file", "category", "problem", "evidence", "suggestion"],
+  "properties": {
+    "severity": {"enum": ["critical", "high", "medium", "low", "info"]},
+    "file": {"type": "string", "minLength": 1},
+    "line": {"type": ["integer", "null"], "minimum": 1},
+    "category": {
+      "enum": ["correctness", "security", "performance", "maintainability", "testing", "architecture", "other"]
+    },
+    "problem": {"type": "string", "minLength": 1},
+    "evidence": {"type": "string", "minLength": 1},
+    "suggestion": {"type": "string", "minLength": 1},
+    "provider": {"type": "string"},
+    "provider_id": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

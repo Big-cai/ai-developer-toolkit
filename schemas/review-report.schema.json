@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "review-report.schema.json",
+  "title": "AI Developer Toolkit Review Report",
+  "type": "object",
+  "required": ["status", "provider", "findings", "summary", "verification"],
+  "properties": {
+    "status": {
+      "enum": ["passed", "findings", "unavailable", "failed", "invalid_output"]
+    },
+    "provider": {"type": "string", "minLength": 1},
+    "findings": {
+      "type": "array",
+      "items": {"$ref": "review-finding.schema.json"}
+    },
+    "summary": {"type": "string"},
+    "verification": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "raw_output": {"type": ["string", "null"]},
+    "exit_code": {"type": ["integer", "null"]},
+    "duration_ms": {"type": ["integer", "null"], "minimum": 0}
+  },
+  "additionalProperties": false
+}

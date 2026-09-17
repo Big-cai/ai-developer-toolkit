@@ -1,0 +1,33 @@
+{
+  "toolkit_version": "0.2.0",
+  "project": "validation-projects/task-board",
+  "date": "2026-09-18",
+  "deterministic": {
+    "typecheck": {
+      "status": "passed"
+    },
+    "test": {
+      "status": "passed",
+      "tests": 4,
+      "passed": 4
+    },
+    "build": {
+      "status": "passed"
+    }
+  },
+  "ai_review": {
+    "provider": "opencode-review",
+    "status": "unavailable",
+    "reason": "ocr executable is not installed in the validation environment",
+    "treated_as_pass": false
+  },
+  "human_gate": {
+    "status": "documented",
+    "items": [
+      "scope",
+      "dependencies",
+      "API preservation",
+      "browser escaping"
+    ]
+  }
+}
