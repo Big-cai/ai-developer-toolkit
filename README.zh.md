@@ -117,24 +117,3 @@ node integrations/opencode-review/run.mjs   --repo ./validation-projects/task-bo
 ```
 
 Provider 不可用时不会伪造评审结果，而是明确返回 unavailable 状态。
-
-## 面试价值
-
-v0.2 不再只是「我写了一套 Prompt」。
-
-它可以证明：
-
-- Prompt Engineering
-- Context Engineering
-- Skill Engineering
-- Agent / Subagent 设计
-- Workflow Orchestration
-- 外部 AI 工具集成
-- Provider 抽象
-- 自动化验证
-- Evaluation / Failure Loop
-- Human-in-the-loop
-
-真正值得展示的是：
-
-`validation-projects/task-board/.ai/verification-run.md`

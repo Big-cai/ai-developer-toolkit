@@ -12,7 +12,7 @@
 - Review → Fix → Re-review workflow documentation.
 - Real Task Board validation project.
 - End-to-end verification record.
-- Chinese documentation for the new architecture and interview material.
+- Chinese documentation for the new architecture.
 
 ### Design decision
 
